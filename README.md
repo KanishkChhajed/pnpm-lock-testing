@@ -53,3 +53,39 @@ cd 3-hoist
 ## TODO pnpmfile.cjs hooks cause changes
 pnpm i
 ```
+
+## 4-hook1 change version
+
+```bash
+cd 4-hook1
+
+## (1) change date-fns from 4.0.0 to 4.1.0
+pnpm i
+```
+
+## 5-hook2 add version
+
+```bash
+cd 5-hook2
+
+## (1) add date-fns 4.0.0
+pnpm i
+```
+
+## 6-hook3 delete version
+
+```bash
+cd 6-hook3
+
+## (1) delete date-fns 4.0.0
+pnpm i
+```
+
+## 7-hook4 change nuxt version
+
+```bash
+cd 7-hook4
+
+## (1) change nuxt from 3.12.2 to 3.15.0
+pnpm i
+```
