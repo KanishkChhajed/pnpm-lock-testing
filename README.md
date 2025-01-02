@@ -10,9 +10,17 @@ find . -name "pnpm-lock.yaml" -type f -exec rm -f {} +
 ```bash
 cd 1-solo
 
-## init
+## (1) no lockfile change
 pnpm i
-## wait for indirect deps up
+
+## (2) only add date-fns to lockfile
+pnpm add date-fns@4.0.0
+
+## (3) no lockfile change
+pnpm up nuxt
+
+## (4) nuxt's deps are changed in lockfile
+## only range-version, not fixed-version
 pnpm up
 
 ```
@@ -22,9 +30,17 @@ pnpm up
 ```bash
 cd 1-mono
 
-## init
+## (1) no lockfile change
 pnpm i
-## wait for indirect deps up
+
+## (2) only add date-fns to lockfile
+pnpm -r add date-fns@4.0.0
+
+## (3) no lockfile change
+pnpm -r up nuxt
+
+## (4) nuxt's deps are changed in lockfile
+## only range-version, not fixed-version
 pnpm -r up
 ```
 
@@ -33,8 +49,7 @@ pnpm -r up
 ```bash
 cd 3-hoist
 
-## init
+## (1) BAD!! lockfile change as new project
+## TODO pnpmfile.cjs hooks cause changes
 pnpm i
-## wait for indirect deps up
-pnpm -r up
 ```
