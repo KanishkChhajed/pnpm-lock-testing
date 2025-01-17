@@ -1,0 +1,9 @@
+{
+  "name": "testing-mono21",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@9.12.3",
+  "dependencies": {
+    "nuxt": "catalog:"
+  }
+}

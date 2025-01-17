@@ -1,0 +1,15 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+pnpmfileChecksum: oxp2m535xj4q2azqjtdqhj4fvy
+
+importers:
+
+  .:
+    dependencies:
+      testing-hoist81:
+        specifier: workspace:*
+        version: link:../h1

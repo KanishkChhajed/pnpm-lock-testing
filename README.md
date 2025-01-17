@@ -11,6 +11,7 @@ find . -name "pnpm-lock.yaml" -type f -exec rm -f {} +
 cd 1-solo
 
 ## (1) no lockfile change
+## Lockfile is up to date, resolution step is skipped
 pnpm i
 
 ## (2) only add date-fns to lockfile
@@ -28,9 +29,10 @@ pnpm up
 ## 2-mono
 
 ```bash
-cd 1-mono
+cd 2-mono
 
 ## (1) no lockfile change
+## Lockfile is up to date, resolution step is skipped
 pnpm i
 
 ## (2) only add date-fns to lockfile
@@ -60,6 +62,7 @@ pnpm i
 cd 4-hook1
 
 ## (1) change date-fns from 4.0.0 to 4.1.0
+## Lockfile is up to date, resolution step is skipped
 pnpm i
 ```
 
@@ -69,6 +72,7 @@ pnpm i
 cd 5-hook2
 
 ## (1) add date-fns 4.0.0
+## Lockfile is up to date, resolution step is skipped
 pnpm i
 ```
 
@@ -78,6 +82,7 @@ pnpm i
 cd 6-hook3
 
 ## (1) delete date-fns 4.0.0
+## Lockfile is up to date, resolution step is skipped
 pnpm i
 ```
 
@@ -87,5 +92,6 @@ pnpm i
 cd 7-hook4
 
 ## (1) change nuxt from 3.12.2 to 3.15.0
+## Lockfile is up to date, resolution step is skipped
 pnpm i
 ```

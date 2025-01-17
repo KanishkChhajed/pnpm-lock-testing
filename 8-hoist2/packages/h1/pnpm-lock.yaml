@@ -1,0 +1,24 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+pnpmfileChecksum: oxp2m535xj4q2azqjtdqhj4fvy
+
+importers:
+
+  .:
+    dependencies:
+      nuxt:
+        specifier: 3.15.0
+        version: 3.15.0
+
+packages:
+
+  nuxt@3.15.0:
+    resolution: {integrity: sha512-pjP/2zEjr57ensZZ1F4b7KldocM9S4SOtukgi9zau1OFlyolUmEgMFbHnwmEKqzuZ1OPTaRS3/1S6B7GUVbbRg==}
+
+snapshots:
+
+  nuxt@3.15.0: {}
